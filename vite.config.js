@@ -4,19 +4,19 @@ import { VitePWA } from "vite-plugin-pwa";
 import { copyFileSync } from "fs";
 
 export default defineConfig({
-  base: "/WYApp/", // Ajusta según el nombre de tu repo en GitHub Pages
+  base: "/WYApp/", // Asegúrate de que esto coincida con el nombre de tu repo en GitHub Pages
   plugins: [
     react(),
     VitePWA({
       registerType: "autoUpdate",
       inject: {
-        injectManifest: true, // Usa el archivo sw.js generado
+        injectManifest: true, // Asegúrate de que esto esté configurado correctamente
       },
       includeAssets: ["favicon.ico", "robots.txt", "apple-touch-icon.png"],
       manifest: {
         name: "WYA App",
         short_name: "WYA",
-        start_url: "/WYApp/", // Coincide con `base`
+        start_url: "/WYApp/", // Asegúrate de que esto coincida con `base`
         scope: "/WYApp/",
         display: "standalone",
         background_color: "#ffffff",
@@ -35,7 +35,6 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Esto asegura que el Service Worker se genere correctamente
         swDest: "dist/sw.js",
       },
     }),
