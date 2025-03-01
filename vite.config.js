@@ -9,6 +9,9 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
+      inject: {
+        injectManifest: true, // Usa el archivo sw.js generado
+      },
       includeAssets: ["favicon.ico", "robots.txt", "apple-touch-icon.png"],
       manifest: {
         name: "WYA App",
@@ -20,18 +23,22 @@ export default defineConfig({
         theme_color: "#000000",
         icons: [
           {
-            src: "icon/icon512_maskable.png",
+            src: "dist/icon/icon512_maskable.png",
             sizes: "192x192",
-            type: "image/png"
+            type: "image/png",
           },
           {
-            src: "icon/icon512_maskable.png",
+            src: "dist/icon/icon512_maskable.png",
             sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
-    })
+            type: "image/png",
+          },
+        ],
+      },
+      workbox: {
+        // Esto asegura que el Service Worker se genere correctamente
+        swDest: "dist/sw.js",
+      },
+    }),
   ],
   build: {
     rollupOptions: {
@@ -39,13 +46,16 @@ export default defineConfig({
         {
           name: "copy-sw",
           closeBundle() {
-            copyFileSync("dist/registerSW.js", "public/registerSW.js");
-          }
-        }
-      ]
-    }
-  },
-  workbox: {
-    swDest: 'WYApp/sw.js', // Esto asegurará que el Service Worker se genere en la raíz
+            // Asegúrate de que el archivo sw.js se haya generado correctamente antes de copiarlo
+            try {
+              copyFileSync("dist/sw.js", "public/sw.js");
+              copyFileSync("dist/registerSW.js", "public/registerSW.js");
+            } catch (err) {
+              console.error("Error copying SW files:", err);
+            }
+          },
+        },
+      ],
+    },
   },
 });

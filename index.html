@@ -1,42 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Estilos CSS -->
 
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hatran&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Estilos CSS -->
 
-    <title>WYA App</title>
 
-    <!-- Vite Generated Styles -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hatran&family=Oxygen:wght@300;400;700&display=swap"
+    rel="stylesheet">
 
-    
-    <!-- Manifest -->
-    <link rel="manifest" href="assets/manifest-BPqisokH.json">
-    <script type="module" crossorigin src="assets/index-CG1S_3-i.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-C1zh4XSt.css">
-    <link rel="manifest" href="manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="registerSW.js"></script></head>
-  <body>
-    <div id="root"></div>
-    
-    <!-- Vite Generated Scripts -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          console.log('Service Worker registrado con éxito:', registration);
-        }).catch(function(error) {
-          console.log('Error al registrar el Service Worker:', error);
-        });
-      }
-    </script>
-    
-    <!-- Main App Script -->
+  <title>WYA App</title>
 
-  </body>
+  <!-- Vite Generated Styles -->
+
+
+  <!-- Manifest -->
+  <link rel="manifest" href="assets/manifest-BPqisokH.json">
+  <script type="module" crossorigin src="assets/index-CG1S_3-i.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/index-C1zh4XSt.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body>
+
+
+  <!-- Vite Generated Scripts -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function (registration) {
+        console.log('Service Worker registrado con éxito:', registration);
+      }).catch(function (error) {
+        console.log('Error al registrar el Service Worker:', error);
+      });
+    }
+  </script>
+
+  <!-- Main App Script -->
+  <div id="root"></div>
+</body>
+
 </html>
