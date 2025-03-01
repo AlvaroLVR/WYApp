@@ -1,0 +1,79 @@
+.containerWheater{
+    display: flex;
+    flex-direction: column;
+}
+
+#infoAboutRegion{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    background: #dfdfdf;
+    align-items: center;
+    height: 10vh;
+}
+
+.caseOfTemperature{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* justify-content: space-between; */
+}
+
+.imgCountry{
+    display: flex;
+    align-self: self-end;
+    border: 0;
+    margin: 0 1rem;
+}
+
+.caseOfDatatime{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.caseOfDatatime>p{
+    margin: .3rem!important;
+}
+
+#temperature{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;  
+}
+
+
+#btn-refreshRegion {
+    align-self: self-end;
+    margin: 0 2rem;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+    font-size: xx-large;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+
+    width: 25%;
+}
+#btn-refreshRegion:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+#btn-refreshRegion:active {
+	position:relative;
+	top:1px;
+}
+
+#date{
+    margin: .3rem !important;
+    align-content: center;
+}

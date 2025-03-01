@@ -1,0 +1,16 @@
+.counterContainer{
+    width: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeLeft{
+    font-size: 5rem;
+    text-shadow: 2px 6px 23px rgba(0,0,0,0.81);
+    color: white;
+}
+
+#date{
+    font-size: xx-large;
+}

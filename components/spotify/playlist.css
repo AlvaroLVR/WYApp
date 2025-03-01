@@ -1,0 +1,69 @@
+/* 
+colores 
+
+fondo : #000000
+verde : #1ed760
+
+*/
+*{
+    font-family: "Oxygen", serif; 
+}
+
+.spotifySong{
+    margin: 2rem 2rem 1rem 2rem;
+    padding: 3rem;
+    background-color: #000000;
+    border: 5px solid #1ed760;
+    color: #1ed760;
+    display: flex;
+    border-radius: 16px;
+    height: 10vh;
+}
+
+img{
+    border-radius: 18px;
+    height: -webkit-fill-available;
+}
+
+ul{
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+}
+ul>li{
+    list-style-type: none;
+}
+p{
+    text-align: center !important;
+    margin: .7rem 2rem !important
+}
+
+a{
+    color: #1ed760;
+}
+/* .playslistName{
+    font-size: small;
+} */
+
+.songName{
+    font-size: 3.5rem !important;
+}
+
+.songInfo{
+    width: -webkit-fill-available;
+    padding: 0 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.songInfo>ul{
+    font-size: xx-large;
+}
+
+.description{
+
+    padding: 10px;
+    background: hsla(0, 0%, 100%, 0.372);
+    border-radius: 10px ;
+}
