@@ -1,19 +1,19 @@
 {
     "name": "WYA App",
     "short_name": "WYA",
-    "start_url": "/WYApp/",
-    "scope": "/WYApp/",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "icons": [
       {
-        "src": "/WYApp/assets/icon/icon512_maskable.png",
+        "src": "/assets/icon/icon512_maskable.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/WYApp/assets/icon/icon512_maskable.png",
+        "src": "/assets/icon/icon512_maskable.png",
         "sizes": "512x512",
         "type": "image/png"
       }
