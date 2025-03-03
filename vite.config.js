@@ -5,7 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 import { copyFileSync } from "fs";
 
 export default defineConfig({
-  base: "/WYApp/", // Asegúrate de que esto coincida con el nombre de tu repo en GitHub Pages
+  base: "/", // Asegúrate de que esto coincida con el nombre de tu repo en GitHub Pages
   plugins: [
     react(),
     VitePWA({
@@ -17,8 +17,8 @@ export default defineConfig({
       manifest: {
         name: "WYA App",
         short_name: "WYA",
-        start_url: "/WYApp/", // Asegúrate de que esto coincida con `base`
-        scope: "/WYApp/",
+        start_url: "/", // Asegúrate de que esto coincida con `base`
+        scope: "/",
         display: "standalone",
         background_color: "#ffffff",
         theme_color: "#000000",
