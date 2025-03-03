@@ -24,12 +24,12 @@ export default defineConfig({
         theme_color: "#000000",
         icons: [
           {
-            src: "/icon/icon512_maskable.png",
+            src: "assets/icon/icon512_maskable.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/icon/icon512_maskable.png",
+            src: "assets/icon/icon512_maskable.png",
             sizes: "512x512",
             type: "image/png",
           },
